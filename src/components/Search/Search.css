@@ -1,0 +1,32 @@
+.SearchBar {
+    display: flex;
+    padding: 0.5rem;
+    width: 50%;
+    background-color: rgb(178, 223, 219);
+    align-items: center;
+    justify-content: center;
+}
+
+input#country-input {
+    flex: 1;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border: none;    
+}
+
+input#submit-button {
+    width: auto;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
+    border: none;    
+    background-color: rgb(0, 150, 136);
+    color: whitesmoke;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
