@@ -1,0 +1,13 @@
+.PlotContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 4rem;
+    padding: 0.5rem;
+    border: solid;
+    border-width: 0.5rem;
+    border-color: rgb(178, 223, 219);
+    width: 80%;
+    height: 28rem;
+}
