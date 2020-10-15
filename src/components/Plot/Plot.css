@@ -5,9 +5,7 @@
     border: none;
     margin-top: 4rem;
     padding: 0.5rem;
-    border: solid;
-    border-width: 0.5rem;
-    border-color: rgb(178, 223, 219);
-    width: 80%;
+    border: none;
+    width: 75%;
     height: 28rem;
 }

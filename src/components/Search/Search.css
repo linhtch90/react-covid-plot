@@ -1,7 +1,14 @@
+.SearchContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
 .SearchBar {
     display: flex;
     padding: 0.5rem;
-    width: 50%;
+    width: 40%;
     background-color: rgb(178, 223, 219);
     align-items: center;
     justify-content: center;

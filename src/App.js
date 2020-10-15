@@ -9,8 +9,7 @@ function App() {
     return (
 	<div className="AppContainer">
 	    <Title />
-	    <Search />
-	    <Plot />
+	    <Search />	   
 	</div>
   );
 }
