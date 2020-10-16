@@ -5,7 +5,7 @@ import Plot from "../Plot/Plot.js";
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { countryInput: "", fetchData: "" };
+    this.state = { countryInput: null, fetchData: null };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -15,13 +15,18 @@ class Search extends React.Component {
   }
 
   handleSubmit(event) {
-      event.preventDefault();
-      this.state.countryInput = this.state.countryInput.toLowerCase();
+    event.preventDefault();
+    this.state.countryInput = this.state.countryInput.toLowerCase();
     const fetchURL = `https://api.covid19api.com/dayone/country/${this.state.countryInput}/status/confirmed/live`;
     console.log(fetchURL);
     fetch(fetchURL)
       .then((response) => response.json())
-      .then((data) => this.setState({ fetchData: data }));
+      .then((data) => {
+        for (let i = 0; i < data.length; i++) {
+          data[i].Date = data[i].Date.slice(0, 10);
+        }
+        this.setState({ fetchData: data });
+      });
   }
 
   render() {
@@ -42,7 +47,7 @@ class Search extends React.Component {
             onClick={this.handleSubmit}
           />
         </div>
-        <Plot data={this.state.fetchData} />        
+        {this.state.fetchData ? <Plot data={this.state.fetchData} /> : ""}
       </div>
     );
   }

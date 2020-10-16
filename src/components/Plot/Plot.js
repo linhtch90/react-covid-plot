@@ -1,6 +1,6 @@
 import React from "react";
 import "./Plot.css";
-import { AreaChart, XAxis, YAxis, Area, Tooltip } from "recharts";
+import { AreaChart, XAxis, YAxis, Area, Tooltip, Label } from "recharts";
 
 class Plot extends React.PureComponent {
   constructor(props) {
@@ -30,13 +30,15 @@ class Plot extends React.PureComponent {
           margin={{
             top: 0,
             right: 0,
-            bottom: 0,
-            left: 0,
+            bottom: 20,
+            left: 30,
           }}
         >
-          <XAxis dataKey="Date" />
-          <YAxis dataKey="Cases" />
-          <Area dataKey="Cases" stroke="#5e35b1" fill="#9575cd" />
+        <XAxis dataKey="Date">
+          <Label value="Date" offset={0} position="bottom"/>
+        </XAxis>
+          <YAxis dataKey="Cases" label={{ value: 'People', angle: -90, position: 'left', offset: 15}} />
+          <Area dataKey="Cases" stroke="#f4511e" fill="#ffab91" />
           <Tooltip />
         </AreaChart>
       </div>
