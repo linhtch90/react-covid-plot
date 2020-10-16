@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-covid-plot/static/css/main.c0350be3.chunk.css",
+    "main.js": "/react-covid-plot/static/js/main.31af1300.chunk.js",
+    "main.js.map": "/react-covid-plot/static/js/main.31af1300.chunk.js.map",
+    "runtime-main.js": "/react-covid-plot/static/js/runtime-main.fa26f7ba.js",
+    "runtime-main.js.map": "/react-covid-plot/static/js/runtime-main.fa26f7ba.js.map",
+    "static/js/2.6763f17c.chunk.js": "/react-covid-plot/static/js/2.6763f17c.chunk.js",
+    "static/js/2.6763f17c.chunk.js.map": "/react-covid-plot/static/js/2.6763f17c.chunk.js.map",
+    "index.html": "/react-covid-plot/index.html",
+    "precache-manifest.ed7260ce15078ad84eef22a6f9d526c4.js": "/react-covid-plot/precache-manifest.ed7260ce15078ad84eef22a6f9d526c4.js",
+    "service-worker.js": "/react-covid-plot/service-worker.js",
+    "static/css/main.c0350be3.chunk.css.map": "/react-covid-plot/static/css/main.c0350be3.chunk.css.map",
+    "static/js/2.6763f17c.chunk.js.LICENSE.txt": "/react-covid-plot/static/js/2.6763f17c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-covid-plot/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa26f7ba.js",
+    "static/js/2.6763f17c.chunk.js",
+    "static/css/main.c0350be3.chunk.css",
+    "static/js/main.31af1300.chunk.js"
+  ]
+}
